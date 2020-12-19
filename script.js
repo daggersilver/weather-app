@@ -53,7 +53,7 @@ function renderInfo(arg, unit){
     cityDisplay.innerText = `${arg.name}, ${arg.sys.country}`; 
     temp.innerText = `${tempConversion(unit, arg)} ${unit}`;
     des.innerText = arg.weather[0].main;
-    icon.style.background = `url(http://openweathermap.org/img/wn/${arg.weather[0].icon}@2x.png) center no-repeat, linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5))`;
+    icon.style.background = `url(https://openweathermap.org/img/wn/${arg.weather[0].icon}@2x.png) center no-repeat, linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5))`;
     windspeed.innerText = arg.wind.speed + " mph";
     humidity.innerText = arg.main.humidity + " %";
 }
