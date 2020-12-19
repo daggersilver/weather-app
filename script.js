@@ -16,7 +16,7 @@ var windUnit;
 
 async function getWeather(city="mumbai", unit="°C"){
     try{
-        var response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=610141c99f975bba14f72033833cff4e`, {mode: "cors"});
+        var response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=610141c99f975bba14f72033833cff4e`, {mode: "cors"});
         var data = await response.json();
         renderInfo(data, unit);
     } catch(err){
